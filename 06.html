@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+<body>
+    <script>
+        const quantPessoas = Number(prompt("Quantas pessoas entraram no clube? "))
+        const quantPeixes = Number(prompt("Qual a quantidade de peixes que serão levadas? "))
+        const valorEntradaind = 20
+        const valorPeixeExtra = 12
+        const QuantPeixeExtra = (quantPeixes - quantPessoas) 
+        const valorFinalEntrada = valorEntradaind * quantPessoas
+        const valorFinalPeixeExtra = valorPeixeExtra * QuantPeixeExtra
+        const valorFinal =  valorFinalEntrada + valorFinalPeixeExtra
+
+        if (quantPessoas < quantPeixes) {
+            alert(`Quantidade de clientes: ${quantPessoas} \n
+            Quantidade de peixes: ${quantPeixes} \n
+            Valor da Entrada: R$ ${valorFinalEntrada} \n
+            Peixes Extras: ${QuantPeixeExtra} \n
+            Valor dos Peixes: R$ ${valorFinalPeixeExtra}\n
+            Valor Final: R$ ${valorFinal}`)
+        }
+        else {
+            alert(`Quantidade de clientes: ${quantPessoas} \n
+            Quantidade de peixes: ${quantPeixes} \n
+            Valor da Entrada: R$ ${valorFinalEntrada} \n
+            Peixes Extras: N/A \n
+            Valor dos Peixes R$ ${valorFinalPeixeExtra}\n
+            Valor Final: R$ ${valorFinal}`)
+
+        }
+    </script>
+</body>
+</html>
